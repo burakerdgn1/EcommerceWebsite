@@ -1,0 +1,134 @@
+header{
+    background-color: white;
+    height: 78px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight:600;
+    padding: 10px 20px;
+
+}
+.logo img{
+    margin-left: 50px;
+    height:68px;
+    width: 130px;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+.nav-menu{
+    list-style: none;
+    margin-right:-250px;
+    transition: color 0.3s ease-in-out;
+}
+.mega-box{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:78px;
+    visibility: hidden;
+}
+.nav-menu >li:hover .mega-box{
+    visibility: visible;
+    display:inline-block;
+
+}
+
+
+
+.nav-menu >li{
+    display: inline-block;
+}
+.nav-menu >li >a{
+    text-decoration: none;
+    color:rgb(169, 169, 175);
+    padding-left:10px;
+    padding-right:10px;
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+.nav-menu li a:hover{
+    color:rgb(123, 123, 129)
+}
+.nav-menu li .mega-box .content .row .mega-links{
+    list-style: none;
+    padding-left:20px;
+}
+
+.nav-menu li .mega-box .content .row .mega-links li a{
+    color:white;
+
+    text-decoration:none;
+}
+
+
+.icon-menu{
+    margin-right: 75px;
+    list-style: none;
+    position:relative;
+    justify-content: space-between;
+    
+
+}
+.icon-menu li{
+    display: inline-block;
+    font-size: 14px;
+    opacity:0.5;
+    
+}
+.icon-menu li i{
+    text-decoration: none;
+    color:dimgrey;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+footer{
+    background-color:whitesmoke;
+    height: 150px;
+}
+
+.mega-box .content{
+    
+    background-color: rgb(87, 87, 83);
+    padding:25px 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.mega-box .content .row header{
+    background-color: rgb(87, 87, 83);
+    color:white;
+    text-transform: uppercase;
+
+
+}
+.content .row{
+    color: white;
+    width: calc(25% - 30px);
+    line-height: 45px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
