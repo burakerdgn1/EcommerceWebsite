@@ -79,8 +79,11 @@ header{
 .icon-menu li{
     display: inline-block;
     font-size: 14px;
-    opacity:0.5;
+    opacity:0.75;
     
+}
+footer{
+    margin-top:500px;
 }
 .icon-menu li i{
     text-decoration: none;
@@ -109,6 +112,7 @@ header{
     line-height: 45px;
 
 }
+
 
 
 
