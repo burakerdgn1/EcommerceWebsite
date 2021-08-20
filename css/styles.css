@@ -228,7 +228,166 @@ form .sign-up a{
 }
 main{
     display: flex;
+    height:600px;
 }
+
+
+
+.homepage1{
+    width: 90%;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    height:400px;
+    margin-left: 65px;
+    margin-right:50px;
+}
+.slider{
+    width: 70%;
+    height:400px;
+    display:flex;
+    position:relative;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width:100%;
+    display:flex;
+}
+.slides input{
+    display:none;
+}
+
+.slide{
+    transition:2s;
+    width:20%;
+
+}
+.slide img{
+    height:400px;
+    width: 1200%;
+}
+.manual-navigation{
+    position:absolute;
+    width:600px;
+    margin-top: 350px;
+    margin-left: 125px;
+    display:flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding:5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #40D3DC;
+}
+.header1 {
+    position:absolute;
+    top: 35px;
+    left: 55px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    color:white;
+  }
+
+.header2 {
+    position: absolute;
+    bottom: 125px;
+    left:55px;
+    color:white;
+    /*transform: translate(-50%, -50%);*/
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -70%;
+    
+}
+#radio3:checked ~ .first{
+    margin-left: -140%;
+
+}
+
+#radio1:checked ~ #head{
+    margin-left: -70%;
+}
+
+
+.homepage1 .second{
+    background-color: white;
+    position:relative;
+    width:30%;
+    margin: 10px;
+    border-radius:7px;
+    display:block;
+    height:100%;
+    
+}
+.homepage1 .second .summer{
+    border-radius: 7px;;
+    background-color:rgb(108, 223, 0);
+    opacity:0.8;
+    width:100%;
+    height:260px;
+    position:relative;
+    display:flex;
+    justify-content:flex-start;
+    overflow: hidden;
+
+}
+.homepage1 .second .summer .tree{
+    margin-top:110px;
+    margin-left:-3px;
+    opacity: 0.1;
+    
+}
+.homepage1 .second .followfacebook{
+    text-align: center;
+    overflow: hidden;
+   
+}
+.homepage1 .second .followfacebook h3{
+    font-weight: normal;
+    opacity: 0.7;
+}
+.homepage1 .second .followfacebook p{
+    font-weight: normal;
+    
+}
+.homepage1 .second .followfacebook button{
+    width:50%;
+    height:25px;
+    bottom:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

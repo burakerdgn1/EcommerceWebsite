@@ -16,3 +16,4 @@ exit.addEventListener('click',()=>{
     div.style.display='none';
 
 });
+
