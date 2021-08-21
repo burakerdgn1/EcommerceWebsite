@@ -16,7 +16,7 @@
 <body>
     <header>
         <a class="logo" href="index.html">
-            <image src="images/osfacademy.png" alt="osf academy logo" ></image>
+            <image src="images/osfacademy.png" alt="osf academy logo"></image>
         </a>
         <nav>
             <ul class="nav-menu">
@@ -100,47 +100,80 @@
     <hr>
     <main>
         <div class="homepage1">
-
-            <div class="slider">
-                <h1 class="header1" id="head">Control and manage any<br> device with cloud
-                    solutions
-                </h1>
-                <h4 class="header2">Improve business performance and the user experience<br> with the right mix of IoT
-                    technology and
-                    processes</h4>
-
-                <div class="slides">
-
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-
-                    <div class="first slide">
-                        <img src="images/featuredimage.png">
+            <div class="carousel">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/layer3.png" height="400" width="800">
+                        <h1 class="header1" id="head11">Control and manage any<br> device with cloud
+                            solutions
+                        </h1>
+                        <h4 class="header2" id="head12">Improve business performance and the user experience<br> with the right mix of
+                            IoT
+                            technology and
+                            processes
+                        </h4>
+                        <div class="viewmore" id="head13">
+                            <a href="#">VIEW MORE</a>
+                        </div>
                     </div>
 
-                    <div class="manual-navigation">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
+                    <div class="mySlides fade" >
+                        <img src="images/layer4.png" height="400" width="800">
+                        <h1 class="header1" id="head21">Control and manage any<br> device with cloud
+                            solutions
+                        </h1>
+                        <h4 class="header2" id="head22">Improve business performance and the user experience<br> with the right mix of
+                            IoT
+                            technology and
+                            processes
+                        </h4>
+                        <div class="viewmore" id="head23">
+                            <a href="#">VIEW MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade" >
+                        <img src="images/layer5.png" height="400" width="800">
+                        <h1 class="header1" id="head31">Control and manage any<br> device with cloud
+                            solutions
+                        </h1>
+                        <h4 class="header2" id="head32">Improve business performance and the user experience<br> with the right mix of
+                            IoT
+                            technology and
+                            processes
+                        </h4>
+                        <div class="viewmore" id="head33">
+                            <a href="#">VIEW MORE</a>
+                        </div>
                     </div>
                 </div>
-
+                <br>
+                <div id="spans" >
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
+
+
+            
             <div class="second">
                 <div class="summer">
-                    <img src="images/palm-tree.png" class="tree" alt="summer" height="175">
+                    <img src="images/summersales.jpg" class="tree" alt="summer" height="175">
                 </div>
                 <div class="followfacebook">
                     <h3>Follow us on Facebook</h3>
                     <p>Sed ut perspiciatis unde omnis iste<br>natus error sit</p>
-                    <button>Follow</button>
+                    <div class="buttonfollow" >
+                        <i class="fab fa-facebook-f"></i>
+                        <a href="#">FOLLOW</a>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-
+        
         <div class="center">
             <div class="container" id="appear">
                 <button class="exit" id="esc">&times;</button>
@@ -166,6 +199,7 @@
                 </form>
             </div>
         </div>
+        
     </main>
 
     <footer>

@@ -4,7 +4,6 @@ header{
     display:flex;
     justify-content: space-between;
     font-size: 15px;
-    font-family: 'Bebas Neue', cursive;
     font-family: 'Lato', sans-serif;
     font-weight:600;
     padding: 10px 20px;
@@ -29,14 +28,13 @@ header{
     left:0;
     top:78px;
     visibility: hidden;
+    z-index: 1;
 }
 .nav-menu >li:hover .mega-box{
     visibility: visible;
     display:inline-block;
 
 }
-
-
 
 .nav-menu >li{
     display: inline-block;
@@ -235,98 +233,154 @@ main{
 
 .homepage1{
     width: 90%;
-    position: absolute;
-    display:flex;
-    justify-content: space-between;
+    display:inline-flex;
+    justify-content:space-between;
     height:400px;
-    margin-left: 65px;
+    margin:0;
+    padding: 10px;
+    margin-left: 55px;
     margin-right:50px;
 }
-.slider{
-    width: 70%;
-    height:400px;
-    display:flex;
-    position:relative;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-}
 
-.slides{
-    width:100%;
-    display:flex;
-}
-.slides input{
-    display:none;
-}
-
-.slide{
-    transition:2s;
-    width:20%;
-
-}
-.slide img{
-    height:400px;
-    width: 1200%;
-}
-.manual-navigation{
+#head11 {
     position:absolute;
-    width:600px;
-    margin-top: 350px;
-    margin-left: 125px;
-    display:flex;
-    justify-content: center;
-}
-.manual-btn{
-    border: 2px solid black;
-    padding:5px;
-    border-radius: 10px;
-    cursor:pointer;
-    transition:1s;
-}
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-.manual-btn:hover{
-    background: #40D3DC;
-}
-.header1 {
-    position:absolute;
-    top: 35px;
-    left: 55px;
+    top: 40px;
+    left: 50px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+    /*font-weight: bold;*/
     color:white;
-  }
-
-.header2 {
+}
+#head12{
+    letter-spacing:-0.1px;
+    font-size:12px;
     position: absolute;
-    bottom: 125px;
-    left:55px;
+    bottom: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:50px;
     color:white;
-    /*transform: translate(-50%, -50%);*/
 }
-#radio1:checked ~ .first{
-    margin-left: 0%;
-}
-#radio2:checked ~ .first{
-    margin-left: -70%;
+#head13{
+    height: 40px;
+    width:140px;
+    letter-spacing:-0.1px;
+    font-size:13px;
+    position: absolute;
+    bottom: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:50px;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center; 
+    justify-content:center;
+    display:flex;
     
 }
-#radio3:checked ~ .first{
-    margin-left: -140%;
-
+#head13 a{
+    margin-top: 10px;
+    color:white;
 }
 
-#radio1:checked ~ #head{
-    margin-left: -70%;
+#head21 {
+    position:absolute;
+    top: 40px;
+    left: 200px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    text-align: center; 
+    justify-content:center;
+    display:flex;
+    float:center;
+}
+#head22{
+    letter-spacing:-0.1px;
+    font-size:12px;
+    position: absolute;
+    bottom: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:260px;
+    color:white;
+    text-align: center; 
+    justify-content:center;
+    display:flex;
+    float:center;
+}
+#head23{
+    height: 40px;
+    width:140px;
+    letter-spacing:-0.1px;
+    font-size:13px;
+    position: absolute;
+    bottom: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:340px;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center; 
+    justify-content:center;
+    display:flex;
+    float:center;
+    
+}
+#head23 a{
+    margin-top: 10px;
+    color:white;
+}
+
+#head31 {
+    position:absolute;
+    top: 40px;
+    left: 325px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    display:flex;
+    float:right;
+    text-align: right; 
+
+
+}
+#head32{
+    letter-spacing:-0.1px;
+    font-size:12px;
+    position: absolute;
+    bottom: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:425px;
+    color:white;
+    display:flex;
+    float:right;
+    text-align: right; 
+
+}
+#head33{
+    height: 40px;
+    width:140px;
+    letter-spacing:-0.1px;
+    font-size:13px;
+    position: absolute;
+    bottom: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    left:600px;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-align: center; 
+    justify-content:center;
+    display:flex;
+    float:center;
+    
+}
+#head33 a{
+    margin-top: 10px;
+    color:white;
+
 }
 
 
 .homepage1 .second{
     background-color: white;
     position:relative;
-    width:30%;
+    width:40%;
     margin: 10px;
     border-radius:7px;
     display:block;
@@ -336,19 +390,18 @@ main{
 .homepage1 .second .summer{
     border-radius: 7px;;
     background-color:rgb(108, 223, 0);
-    opacity:0.8;
     width:100%;
     height:260px;
     position:relative;
-    display:flex;
+    display:list-item;
     justify-content:flex-start;
     overflow: hidden;
 
 }
+
 .homepage1 .second .summer .tree{
-    margin-top:110px;
-    margin-left:-3px;
-    opacity: 0.1;
+    width:100%;
+    height:100%;
     
 }
 .homepage1 .second .followfacebook{
@@ -357,19 +410,94 @@ main{
    
 }
 .homepage1 .second .followfacebook h3{
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: -1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     opacity: 0.7;
 }
 .homepage1 .second .followfacebook p{
-    font-weight: normal;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     
 }
-.homepage1 .second .followfacebook button{
+.homepage1 .second .followfacebook .buttonfollow{
+    height: 40px;
     width:50%;
-    height:25px;
-    bottom:0;
+    letter-spacing:-0.1px;
+    font-size:13px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    border: 1px solid blue;
+    display:inline-block;
+    justify-content:center;
+
+   
+}
+.homepage1 .second .followfacebook .buttonfollow a{
+    position:relative;
+    margin: 10px auto 10px;
+    margin-right:20px;
+    color:blue;
+    
+
+}
+.homepage1 .second .followfacebook .buttonfollow i{
+    position:relative;
+    margin-left:10px;
+    margin-top:12.5px;
+    color:blue;
+    padding-right: 7px;
+    padding-left: -15px;
+
 }
 
+/*--------------------------------------*/
+
+.carousel{
+    width: 1300px;
+    height:400px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slideshow-container {
+    width:100%;
+    height:100%;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.7;
+  border: 2px solid white;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+#spans{
+    position:relative;
+    bottom:80px;
+    left:-22px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    width: 100%;
+    text-align: center;
+}
 
 
 
