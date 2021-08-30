@@ -12,21 +12,29 @@
     <script src="https://kit.fontawesome.com/d79ce173a9.js" crossorigin="anonymous"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/json.js"></script>
-    <script src="js/featuredSlider.js"></script>
     <script src="js/increaseProducts.js"></script>
-    <script src="js/carouselSlides.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/fullYear.js"></script>
     <script src="js/new.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/readmoreAndImagechange.js"></script>
     <script src="js/links.js"></script>
+    <script src="js/prodcutTabs.js"></script>
+
+
 
 
 </head>
 
 
-<body>
+<body style="background-image: url('images/bground2.png');
+width:100%;
+height:auto;
+margin:0;
+box-sizing: border-box;
+justify-content: space-between;
+">
 
     <header>
         <a class="logo" href="index.html">
@@ -131,179 +139,237 @@
         </ul>
 
     </header>
-    <main>
-        <div class="homepage1">
-            <div class="carousel">
-                <div class="slideshow-container">
-                    <div class="mySlides fade active">
-                        <img src="images/layer3.png">
-                        <h1 class="header1" id="head11">Control and manage any<br> device with cloud
-                            solutions
-                        </h1>
-                        <h4 class="header2" id="head12">Improve business performance and the user experience<br> with
-                            the right mix of
-                            IoT
-                            technology and
-                            processes
-                        </h4>
-
-                        <div class="viewmore" id="head13">
-                            <a href="categoryLanding.html">VIEW MORE</a>
-                        </div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/layer4.png">
-
-                        <h1 class="header1" id="head21">Control and manage any<br> device with cloud
-                            solutions
-                        </h1>
-                        <h4 class="header2" id="head22">Improve business performance and the user experience<br> with
-                            the right mix of
-                            IoT
-                            technology and
-                            processes
-                        </h4>
-                        <div class="viewmore" id="head23">
-                            <a href="categoryLanding.html">VIEW MORE</a>
-                        </div>
-
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/layer5.png">
-                        <h1 class="header1" id="head31">Control and manage any<br> device with cloud
-                            solutions
-                        </h1>
-                        <h4 class="header2" id="head32">Improve business performance and the user experience<br> with
-                            the right mix of
-                            IoT
-                            technology and
-                            processes
-                        </h4>
-                        <div class="viewmore" id="head33">
-                            <a href="categoryLanding.html">VIEW MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div id="spans">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
-
-
-
-            <div class="second">
-                <div class="summer">
-                    <img src="images/sales.png" class="tree" alt="summer">
-                </div>
-                <div class="followfacebook">
-                    <h3>Follow us on Facebook</h3>
-                    <p>Sed ut perspiciatis unde omnis iste<br>natus error sit</p>
-                    <div class="buttonfollow">
-                        <i class="fab fa-facebook-f"></i>
-                        <a href="https://www.facebook.com/OSFDigital/">FOLLOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="center">
-            <div class="container" id="appear">
-                <button class="exit" id="esc">&times;</button>
-                <div class="text">Sign in</div>
-                <form action="#">
-                    <div class="data">
-                        <label>Email</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="data">
-                        <label>Password</label>
-                        <a href="#">forgot password</a>
-                        <input type="password" required>
-                    </div>
-                    <div class="forgot-pass"></div>
-                    <div class="btn">
-                        <div class="inner"></div>
-                        <button type="submit">LOGIN</button>
-                    </div>
-                    <div class="sign-up">
-                        <a href="#">I don't have an account</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-
-        <div class="product-tile">
-            <hr>
-            <h3 style="margin-left:43%;">Popular Items</h3>
-
-            <div class="row" id="row">
-                <!--
-                <div class="box">
-                    <div class="slide">
-                        <div class="slide-img">
-                            <img src="images/featuredproduct1.png">
-                            <div class="overlay">
-                                <button  class="b1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
-                                            d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
-                                    </svg></button>
-                                <button  class="b2"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
-                                            d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
-                                    </svg></button>
-                                <img>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail-box">
-                        <p>Aristina Dam Oak Table With White Marble Top</p>
-                        <div class="type">
-                            <a href="#" class="price">$23</a>
-                            <a href="#" class="b3" class="buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-            </div>
-
-            <button class="btn">Load More
-            </button>
-        </div>
-        <div class="theme">
-            <img src="images/banner.png" alt="banner">
-        </div>
-
-        <div class="featured-products">
-            <div class="header">
-                <h1>Featured Products</h1>
-                <h4>Unde omnis iste natus error sit voluptatem</h4>
-            </div>
-            <div class="slider">
-                <span class="spn first">&#139;</span>
-                <hr style="position: absolute;
-             width: 35%;
-            margin-left: 30%;">
-                <span class="spn second">&#155;</span>
-            </div>
-
-
-            <div class="arow2" id="arow2">
-
-            </div>
-        </div>
-        <div class="benefit">
-            <img src="images/benefit.png" alt="benefit">
-        </div>
-
-
+    <!--
+    <main style="width:90%; justify-content: center; background-color: white; font-family: 'Lato', sans-serif; overflow:visible;
+    ;">
+    
     </main>
+    -->
+
+    <div class="product-detail" style="margin-left:50px; margin-right:50px; margin-top:15%; background-color: white;">
+        <div class="row" style="display:flex; ">
+            <div class="col1">
+                <img src="images/pd/pd1-big.jpg" style="margin-left:20px;margin-top:20px;width:90vh; height:80vh;"
+                    id="productImage">
+            </div>
+            <div class="col2" style="display: grid; 
+            margin-left: 30px;
+            margin-top: 35px;">
+                <img class="small img1" src="images/pd/pd1-small.jpg" style="height:75px; ">
+                <img class="small img2" src="images/pd/pd2-small.jpg" style="margin-top:-85px; height:75px;">
+                <img class="small img3" src="images/pd/pd3-small.jpg" style="margin-top:-100px; height:75px;">
+                <img class="small img4" src="images/pd/pd4-small.jpg" style="margin-top:-100px; height:75px;">
+            </div>
+            <div class="col3" style="display:grid; padding:0 20px ; margin-left:50px; margin-top:10px; height:auto;">
+                <div style="height:16%;">
+                    <h1 style="font-size:3em;">$299.99</h1>
+                </div>
+                <div style="height: 10%;
+                margin-top: -25px;
+                width: 55%;">
+
+                    <select style="width: 100%;
+                    
+                    height: 40px;
+                    border-radius: 30px;
+                    text-align-last:center; ">
+                        <option>Black</option>
+                        <option>Green</option>
+                    </select>
+                </div>
+
+                <div class="add-chart" style=" height:16%;">
+                    <input style="width: 35%;
+                        text-align-last: center;
+                    height: 40px;
+                    border-radius: 50px;
+                    border: 1px solid gray;" type="number" value="1">
+                    <button style="    width: 50%;
+                    height: 40px;
+                    border-radius: 30px;
+                    text-align-last: center;
+                    border:1px solid gray;
+                    background-color: #84bc22; color: white;" class="add-btn">ADD TO CHART</button>
+                </div>
+                <div class="details" style="height:32%; margin-top:0;">
+                    <div class="detail1">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit<br> voluptatem accusantium doloremque
+                            laudantium,<br> totam rem aperiam, eaque ipsa quae ab illo inven-<br>tore Beatae vitae dicta
+                            sunt explicabo.<br>Nemo enim ipsam voluptatem quia voluptas </p>
+
+                    </div>
+
+                    <div class="detail2" style="display:none; position:relative;">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit<br> voluptatem accusantium doloremque
+                            laudantium,<br> totam rem aperiam, eaque ipsa quae ab illo inven-<br>tore Beatae vitae dicta
+                            sunt explicabo.<br>Nemo enim ipsam voluptatem quia voluptas </p>
+                    </div>
+                    <a id="read-more" style="cursor:pointer; color:#84bc22">Read more</a>
+                </div>
+                <div style="display:flex; height:5%; position:relative;">
+                    <p>Share</p>
+                    <ul class="icon-menu">
+                        <li><a href="https://www.facebook.com/OSFDigital/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://osf.digital/products/commerce-cloud/product-feed-for-google-shopping"><i
+                                    class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://twitter.com/osfdigital"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.pinterest.ca/osfglobal/"><i class="fab fa-pinterest-p"></a></i></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="tabs">
+        <div class="heading">
+            <div class="active">Description</div>
+            <div>Additional Info</div>
+            <div>Reviews(3)</div>
+        </div>
+        <div class="tab-content">
+            <div class="active">
+                <div class="text1">
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="text1">
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+
+                </div>
+                <div class="text2">
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+                </div>
+            </div>
+            <div>
+                <div class="text1">
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis<br> natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur<br> ridiculus mus.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget
+                        dolor.Aenean
+                        Massa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="product-tile" style="overflow-x: hidden; background-color: white; margin-left:50px; margin-right:50px;">
+        <hr>
+        <h3 style="color: #262a32;
+        background-color: white;">POPULAR ITEMS</h3>
+
+        <div class="row" id="row">
+            <!--
+            <div class="box">
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="images/featuredproduct1.png">
+                        <div class="overlay">
+                            <button  class="b1"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
+                                    <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
+                                        d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
+                                </svg></button>
+                            <button  class="b2"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
+                                    <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
+                                        d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
+                                </svg></button>
+                            <img>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <p>Aristina Dam Oak Table With White Marble Top</p>
+                    <div class="type">
+                        <a href="#" class="price">$23</a>
+                        <a href="#" class="b3" class="buy">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+
+        <button class="btn" style="background-color: #84bc22; color:white;">Load More</button>
+    </div>
+
+
+    <div class="benefit">
+        <img src="images/benefit.png" alt="benefit">
+    </div>
+    <div class="center">
+        <div class="container" id="appear">
+            <button class="exit" id="esc">&times;</button>
+            <div class="text">Sign in</div>
+            <form action="#">
+                <div class="data">
+                    <label>Email</label>
+                    <input type="text" required>
+                </div>
+                <div class="data">
+                    <label>Password</label>
+                    <a href="#">forgot password</a>
+                    <input type="password" required>
+                </div>
+                <div class="forgot-pass"></div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit">LOGIN</button>
+                </div>
+                <div class="sign-up">
+                    <a href="#">I don't have an account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
 
     <footer>
         <div class="footer-div">
@@ -396,11 +462,6 @@
         </p>
         <button class="cookie-btn">ACCEPT</button>
     </div>
-
-    <script>
-
-    </script>
-
 
 
 
