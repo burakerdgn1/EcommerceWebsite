@@ -12,14 +12,14 @@
     <script src="https://kit.fontawesome.com/d79ce173a9.js" crossorigin="anonymous"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/json.js"></script>
     <script src="js/featuredSlider.js"></script>
     <script src="js/increaseProducts.js"></script>
     <script src="js/carouselSlides.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/fullYear.js"></script>
-    <script src="js/new.js"></script>
+    <script src="js/showProducts.js"></script>
     <script src="js/links.js"></script>
  
 </head>
@@ -134,15 +134,17 @@ justify-content: space-between;
         <li><i class="fas fa-search"></i></li>
         <li><i class="far fa-user" id="login"></i></li>
         <li><i class="far fa-heart">
-                <p id="counter2" style="font-weight:bold;position:absolute; top:-17px; right:27px;">0</p>
+                <p id="counter2" >0</p>
             </i></li>
         <li><i class="fas fa-shopping-bag">
-                <p id="counter1" style="position:absolute; top:-17px; right:0;">0</p>
+                <p id="counter1">0</p>
             </i></li>
     </ul>
 
 </header>
     <main style="margin-top:15%; background-color: #f2edea;">
+        <a href="index.html" id="cl-home">Home</a>
+
         <div style="margin-left:100px;">
             <img src="images/filter.png"> 
         </div>
@@ -175,36 +177,7 @@ justify-content: space-between;
 
         <div class="product-tile" >
             <div class="row" id="row">
-                <!--
-                <div class="box">
-                    <div class="slide">
-                        <div class="slide-img">
-                            <img src="images/featuredproduct1.png">
-                            <div class="overlay">
-                                <button  class="b1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
-                                            d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
-                                    </svg></button>
-                                <button  class="b2"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
-                                            d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
-                                    </svg></button>
-                                <img>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail-box">
-                        <p>Aristina Dam Oak Table With White Marble Top</p>
-                        <div class="type">
-                            <a href="#" class="price">$23</a>
-                            <a href="#" class="b3" class="buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                -->
-
+                
             </div>
 
             <button class="btn" style="background-color: #84bc22; color:white;">Load More</button>
@@ -225,88 +198,7 @@ justify-content: space-between;
 
 
             <div class="arow2" id="arow2">
-                <div class="second-box">
-                    <div class="second-slide">
-                        <div class="second-slide-img">
-                            <img src="images/featuredproduct1.png">
-                            <div class="second-overlay">
-                                <button class="second-b1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
-                                            d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
-                                    </svg></button>
-                                <button class="second-b2"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
-                                            d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
-                                    </svg></button>
-                                <img>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="second-detail-box">
-                        <p>Aristina Dam Oak Table With White Marble Top</p>
-                        <div class="second-type">
-                            <a href="#" class="second-price">$23</a>
-                            <a href="#" class="second-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="second-box">
-                    <div class="second-slide">
-                        <div class="second-slide-img">
-                            <img src="images/featuredproduct1.png">
-                            <div class="second-overlay">
-                                <button class="second-b1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
-                                            d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
-                                    </svg></button>
-                                <button class="second-b2"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
-                                            d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
-                                    </svg></button>
-                                <img>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="second-detail-box">
-                        <p>Aristina Dam Oak Table With White Marble Top</p>
-                        <div class="second-type">
-                            <a href="#" class="second-price">$23</a>
-                            <a href="#" class="second-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="second-box">
-                    <div class="second-slide">
-                        <div class="second-slide-img">
-                            <img src="images/featuredproduct1.png">
-                            <div class="second-overlay">
-                                <button class="second-b1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(35, 196, 110)"
-                                            d="M28.363,17.640 L18.015,17.640 L18.015,27.988 C18.015,28.323 17.743,28.597 17.407,28.597 L12.537,28.597 C12.201,28.597 11.928,28.323 11.928,27.988 L11.928,17.640 L1.581,17.640 C1.244,17.640 0.972,17.368 0.972,17.031 L0.972,12.162 C0.972,11.825 1.244,11.553 1.581,11.553 L11.928,11.553 L11.928,1.205 C11.928,0.869 12.201,0.596 12.537,0.596 L17.407,0.596 C17.743,0.596 18.015,0.869 18.015,1.205 L18.015,11.553 L28.363,11.553 C28.699,11.553 28.972,11.825 28.972,12.162 L28.972,17.031 C28.972,17.368 28.699,17.640 28.363,17.640 Z" />
-                                    </svg></button>
-                                <button class="second-b2"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="29px">
-                                        <path fill-rule="evenodd" fill="rgb(231, 60, 104)"
-                                            d="M30.791,14.657 C33.972,11.447 33.970,6.248 30.791,3.038 C29.166,1.398 27.024,0.597 24.895,0.632 C21.915,0.683 17.002,4.660 17.002,4.660 C17.002,4.660 11.951,0.626 8.898,0.631 C6.818,0.635 4.740,1.437 3.153,3.038 C-0.026,6.248 -0.028,11.447 3.153,14.657 L16.972,28.596 L30.791,14.657 Z" />
-                                    </svg></button>
-                                <img>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="second-detail-box">
-                        <p>Aristina Dam Oak Table With White Marble Top</p>
-                        <div class="second-type">
-                            <a href="#" class="second-price">$23</a>
-                            <a href="#" class="second-buy">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-               
+                
             </div>
         </div>
         

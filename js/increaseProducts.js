@@ -51,6 +51,13 @@ $(document).ready(function () {
 
         });
     }
+    var addChart= document.getElementById('add-btn');
+    var howMany = document.getElementById('add-chart');
+    addChart.addEventListener('click',function(){
+        var x = parseInt(counter1.innerText) + parseInt(howMany.value);
+        counter1.innerText=x;
+        
+    });
     
 
 });
